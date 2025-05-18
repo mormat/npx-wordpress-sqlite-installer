@@ -1,6 +1,6 @@
 {
-    "name": "wordpress-tools",
-    "version": "1.0.0",
+    "name": "@mormat/wordpress-sqlite-installer",
+    "version": "0.0.1",
     "keywords": [
         "util",
         "functional",
@@ -9,5 +9,16 @@
         "browser"
     ],
     "author": "mathieu",
-    "contributors": []
+    "contributors": [],
+    "dependencies": {
+        "crypto-js": "^4.2.0",
+        "node-stream-zip": "^1.15.0",
+        "tmp": "^0.2.3"
+    },
+    "main": "src/main.js",
+    "bin":  "src/command.js",
+    "scripts": {
+        "command": "node src/command.js",
+        "build": "npm pack --pack-destination=./build"
+    }
 }
